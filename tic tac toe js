@@ -1,0 +1,175 @@
+let count = 0
+
+const box1 = document.getElementById("one");
+const box2 = document.getElementById("two");
+const box3 = document.getElementById("three");
+const box4 = document.getElementById("four");
+const box5 = document.getElementById("five");
+const box6 = document.getElementById("six");
+const box7 = document.getElementById("seven");
+const box8 = document.getElementById("eight");
+const box9 = document.getElementById("nine");
+
+let singlegrid = [box1, box2, box3, box4, box5, box6, box7, box8, box9];
+let letters = ["X", "O"]
+function add(value) {
+    if (count%2 == 1) {
+        document.getElementById("xteam").style.color = "red"
+        document.getElementById("oteam").style.color = "black"
+    }
+    else{
+        document.getElementById("oteam").style.color = "blue"
+        document.getElementById("xteam").style.color = "black"
+        
+    }
+
+    let position = singlegrid[value];
+    if(position.textContent.length == 0){
+        position.textContent = letters[count%2];
+        count ++;
+    }
+    if (singlegrid[0].textContent == "X" && singlegrid[1].textContent == "X" && singlegrid[2].textContent == "X"){
+        console.log("works");
+        document.getElementById("resulttext").textContent = " X wins"
+        box1.style.backgroundColor = "lightgreen"
+        box2.style.backgroundColor = "lightgreen"
+        box3.style.backgroundColor = "lightgreen"
+    }
+
+    if (singlegrid[3].textContent == "X" && singlegrid[4].textContent == "X" && singlegrid[5].textContent == "X"){
+        console.log("works");
+        document.getElementById("resulttext").textContent = " X wins"
+        box4.style.backgroundColor = "lightgreen"
+        box5.style.backgroundColor = "lightgreen"
+        box6.style.backgroundColor = "lightgreen"
+        
+    }
+
+    if (singlegrid[6].textContent == "X" && singlegrid[7].textContent == "X" && singlegrid[8].textContent == "X"){
+        console.log("works");
+        document.getElementById("resulttext").textContent = " X wins"
+        box7.style.backgroundColor = "lightgreen"
+        box8.style.backgroundColor = "lightgreen"
+        box9.style.backgroundColor = "lightgreen"
+    }
+
+    if (singlegrid[0].textContent == "X" && singlegrid[4].textContent == "X" && singlegrid[8].textContent == "X"){
+        console.log("works");
+        document.getElementById("resulttext").textContent = " X wins"
+        box1.style.backgroundColor = "lightgreen"
+        box5.style.backgroundColor = "lightgreen"
+        box9.style.backgroundColor = "lightgreen"
+    }
+
+    if (singlegrid[2].textContent == "X" && singlegrid[4].textContent == "X" && singlegrid[6].textContent == "X"){
+        console.log("works");
+        document.getElementById("resulttext").textContent = " X wins"
+        box3.style.backgroundColor = "lightgreen";
+        box5.style.backgroundColor = "lightgreen";
+        box7.style.backgroundColor = "lightgreen";
+    }
+
+
+
+
+    if (singlegrid[0].textContent == "X" && singlegrid[3].textContent == "X" && singlegrid[6].textContent == "X"){
+        console.log("works");
+        document.getElementById("resulttext").textContent = " X wins"
+        box1.style.backgroundColor = "lightgreen"
+        box4.style.backgroundColor = "lightgreen"
+        box7.style.backgroundColor = "lightgreen"
+    }
+
+    if (singlegrid[1].textContent == "X" && singlegrid[4].textContent == "X" && singlegrid[7].textContent == "X"){
+        console.log("works");
+        document.getElementById("resulttext").textContent = " X wins"
+        box2.color = "lightgreen"
+        box5.style.color = "lightgreen"
+        box8.style.color = "lightgreen"
+        
+    }
+
+    if (singlegrid[2].textContent == "X" && singlegrid[5].textContent == "X" && singlegrid[8].textContent == "X"){
+        console.log("works");
+        document.getElementById("resulttext").textContent = " X wins"
+        box3.style.backgroundColor = "tomato"
+        box6.style.backgroundColor = "tomato"
+        box9.style.backgroundColor = "tomato"
+    }
+
+    if (singlegrid[0].textContent == "O" && singlegrid[1].textContent == "O" && singlegrid[2].textContent == "O"){
+        console.log("works");
+        document.getElementById("resulttext").textContent = " O wins"
+        box1.style.backgroundColor = "lightgreen"
+        box2.style.backgroundColor = "lightgreen"
+        box3.style.backgroundColor = "lightgreen"
+    }
+
+    if (singlegrid[3].textContent == "O" && singlegrid[4].textContent == "O" && singlegrid[5].textContent == "O"){
+        console.log("works");
+        document.getElementById("resulttext").textContent = " O wins"
+        box4.style.backgroundColor = "lightgreen"
+        box5.style.backgroundColor = "lightgreen"
+        box6.style.backgroundColor = "lightgreen"
+        
+    }
+
+    if (singlegrid[6].textContent == "O" && singlegrid[7].textContent == "O" && singlegrid[8].textContent == "O"){
+        console.log("works");
+        document.getElementById("resulttext").textContent = " O wins"
+        box7.style.backgroundColor = "lightgreen"
+        box8.style.backgroundColor = "lightgreen"
+        box9.style.backgroundColor = "lightgreen"
+    }
+
+    if (singlegrid[0].textContent == "O" && singlegrid[4].textContent == "O" && singlegrid[8].textContent == "O"){
+        console.log("works");
+        document.getElementById("resulttext").textContent = " O wins"
+        box1.style.backgroundColor = "lightgreen"
+        box5.style.backgroundColor = "lightgreen"
+        box9.style.backgroundColor = "lightgreen"
+    }
+
+    if (singlegrid[2].textContent == "O" && singlegrid[4].textContent == "O" && singlegrid[6].textContent == "O"){
+        console.log("works");
+        document.getElementById("resulttext").textContent = " O wins"
+        box3.style.backgroundColor = "lightgreen";
+        box5.style.backgroundColor = "lightgreen";
+        box7.style.backgroundColor = "lightgreen";
+    }
+
+
+
+
+    if (singlegrid[0].textContent == "O" && singlegrid[3].textContent == "O" && singlegrid[6].textContent == "O"){
+        console.log("works");
+        document.getElementById("resulttext").textContent = " O wins"
+        box1.style.backgroundColor = "lightgreen"
+        box4.style.backgroundColor = "lightgreen"
+        box7.style.backgroundColor = "lightgreen"
+    }
+
+    if (singlegrid[1].textContent == "O" && singlegrid[4].textContent == "O" && singlegrid[7].textContent == "O"){
+        console.log("works");
+        document.getElementById("resulttext").textContent = " O wins"
+        box2.style.backgroundcolor = "lightgreen"
+        box5.style.color = "lightgreen"
+        box8.style.color = "lightgreen"
+        
+    }
+
+    if (singlegrid[2].textContent == "O" && singlegrid[5].textContent == "O" && singlegrid[8].textContent == "O"){
+        console.log("works");
+        document.getElementById("resulttext").textContent = " O wins"
+        box3.style.backgroundColor = "tomato"
+        box6.style.backgroundColor = "tomato"
+        box9.style.backgroundColor = "tomato"
+    }
+
+
+
+
+
+
+}
+
