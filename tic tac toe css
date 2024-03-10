@@ -1,0 +1,137 @@
+body{
+    background-color: lightcyan;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+
+#whichplayer{
+    padding: 10px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 2rem;
+    text-align: center;
+    position: relative;
+    top: 40px;
+}
+#resulttext{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    position: relative;
+    left: 30px;
+}
+
+#xteam{
+    border: 5px solid;
+    width: 100px;
+    padding: 10px;
+    position: relative;
+    left: 220px;
+    color: ;
+}
+
+#board{
+    text-align: center;
+    font-size: 4rem;
+}
+#oteam{
+    position: relative;
+    border: 5px solid;
+    width: 100px;
+    padding: 10px;
+    left: 350.5px;
+    bottom: 65.5px;
+}
+
+#one{
+    border-right: 5px solid;
+    border-bottom: 5px solid;
+    height: 100px;
+    width: 100px;
+    position: relative;
+    left: 200px;
+    top: 50px;
+
+}
+
+#two{
+    border-bottom: 5px solid;
+    border-right: 5px solid;
+    height: 100px;
+    width: 100px;
+    position: relative;
+    left: 300px;
+    bottom: 55px;
+}
+
+#three{
+    border-bottom: 5px solid;
+
+    height: 100px;
+    width: 100px;
+    position: relative;
+    left: 400px;
+    bottom: 160px;
+}
+
+#four{
+    border-right: 5px solid;
+    border-bottom: 5px solid;
+    height: 100px;
+    width: 100px;
+    position: relative;
+    left: 200px;
+    bottom: 160px;
+}
+
+#five{
+    border-bottom: 5px solid;
+    border-right: 5px solid;
+    height: 100px;
+    width: 100px;
+    position: relative;
+    left: 300px;
+    bottom: 265px;
+}
+
+#six{
+    border-bottom: 5px solid;
+
+    height: 100px;
+    width: 100px;
+    position: relative;
+    left: 400px;
+    bottom: 370px;
+}
+
+
+#seven{
+    border-right: 5px solid;
+
+    height: 100px;
+    width: 100px;
+    position: relative;
+    left: 201px;
+    bottom: 376px;
+}
+
+#eight{
+
+    border-right: 5px solid;
+    height: 100px;
+    width: 100px;
+    position: relative;
+    left: 300px;
+    bottom: 475px;
+}
+
+#nine{
+
+
+    height: 100px;
+
+    width: 100px;
+    position: relative;
+    left: 400px;
+    bottom: 575px;
+    text-align: center;
+}
+
+
