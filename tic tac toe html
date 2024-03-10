@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="whichplayer">
+        <p></p>
+        <div id="xteam" >X</div>
+        <div id="oteam">O</div>
+        <div id="resulttext" ></div>
+    </div>
+    <div id="board">
+        <div id="one" data-value="0" onclick="add(this.getAttribute('data-value'))"></div>
+        <div id="two" data-value="1" onclick="add(this.getAttribute('data-value'))"></div>
+        <div id="three" data-value="2" onclick="add(this.getAttribute('data-value'))"></div>
+    
+        <div id="four" data-value="3" onclick="add(this.getAttribute('data-value'))"></div>
+        <div id="five" data-value="4" onclick="add(this.getAttribute('data-value'))"></div>
+        <div id="six" data-value="5" onclick="add(this.getAttribute('data-value'))"></div>
+    
+        <div id="seven" data-value="6" onclick="add(this.getAttribute('data-value'))"></div>
+        <div id="eight" data-value="7" onclick="add(this.getAttribute('data-value'))"></div>
+        <div id="nine" data-value="8" onclick="add(this.getAttribute('data-value'))"></div>
+        
+        <p</p>
+
+    </div>
+
+    
+    
+
+    </div>
+
+    <p id="resulttext">Player 1</p>
+
+
+    <script src="index.js"></script>
+    
+</body>
+</html>
